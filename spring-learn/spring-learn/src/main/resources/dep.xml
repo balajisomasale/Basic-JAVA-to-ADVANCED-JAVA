@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+
+    <bean id="departmentBean" class="com.cognizant.springlearn.bean.Department">
+        <property name="id" value="1" />
+        <property name="name" value="Payroll 1" />
+    </bean>
+    <bean id="departmentBean1" class="com.cognizant.springlearn.bean.Department">
+        <property name="id" value="2" />
+        <property name="name" value="Payroll 2" />
+    </bean>
+    <bean id="departmentBean2" class="com.cognizant.springlearn.bean.Department">
+        <property name="id" value="3" />
+        <property name="name" value="Payroll 3" />
+    </bean>
+   
+   <!--  <bean id="MainDEP" class="com.cognizant.springlearn.bean.Department">
+        
+        <property name="department" ref="departmentBean" />
+        
+        
+        
+    </bean> -->
+   
+     
+    <bean id="list" class="com.cognizant.springlearn.DEPdao.DepartmentDao">
+    <property name="deplist">
+    <array>
+    
+    <ref bean="departmentBean"/>
+    <ref bean="departmentBean1"/>
+    <ref bean ="departmentBean2"/>
+    </array>
+    
+    
+    </property>
+    
+    
+    </bean>
+
+</beans>
+

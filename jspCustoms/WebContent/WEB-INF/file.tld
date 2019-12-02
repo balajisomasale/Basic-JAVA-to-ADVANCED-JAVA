@@ -1,0 +1,12 @@
+<taglib>
+<tlib-version>1.0</tlib-version>
+<jsp-version>1.2</jsp-version>
+<short-name>Example TLD</short-name>
+<tag>
+
+<name>file</name>
+<tag-class>com.cognizant.MytagHandler</tag-class>
+<body-content>empty</body-content>
+
+</tag>
+</taglib>

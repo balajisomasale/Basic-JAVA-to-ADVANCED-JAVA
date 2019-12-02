@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>List of Groups</title>
+</head>
+<body>
+<h1>New Employee</h1>
+<div class="container-fluid">
+	<form>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-lg-4">
+					<label for="fname">First Name</label>
+					<input type="text" class="form-control" id="fname">
+				</div>
+				<div class="col-lg-4">
+					<label for="mname">Middle Name</label>
+					<input type="text" class="form-control" id="mname">
+				</div>
+				<div class="col-lg-4">
+					<label for="lname">Last Name</label>
+					<input type="text" class="form-control" id="lname">
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-lg-6">
+					<label for="addressline1">Address Line 1</label>
+					<input type="text" class="form-control" id="addressline1">
+				</div>
+				<div class="col-lg-6">
+					<label for="addressline2">Address Line 2</label>
+						<input type="text" class="form-control" id="addressline2">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email">
+				</div>
+				<div class="col-lg-3">
+					<label for="pass">Password</label>
+					<input type="password" class="form-control" id="pass">
+				</div>
+				<div class="col-lg-3">
+					<label for="c_pass">Confirm Password</label>
+					<input type="password" class="form-control" id="c_pass">
+				</div>
+			</div>		
+		<div class="row">
+				<div class="col-lg-3">
+					<label for="department">Department</label>
+					<select name="Department" class="form-control" id="department">
+					
+					<option value="ece"></option></select>
+				</div>
+				<div class="col-lg-3">
+					<label for="dateOfBirth">Date of Birth</label>
+					<input type="text" class="form-control" id="dateOfBirth"> 
+				</div>
+				<div class="col-lg-3">
+					<label for="gender">Gender</label><br>
+					<label for="male">Male</label>
+						<input type="radio"  id="male">
+						<label for="female">Female</label>
+				<input type="radio"  id="female">
+				</div>
+				<div class="col-lg-3">
+					<label for="permanent">Permanent</label><br>
+					<input type="checkbox" id="permanent"> 
+				</div>
+			</div><br>
+		<div class="row">
+	<div class="col-xl-3">
+		<button type="button" class="btn btn-success">Save</button>
+		</div>
+		</div>
+		</div>
+		
+		
+		
+
+			
+
+		
+	</form>
+	</div>
+</body>
+<script> 
+  $('#dateOfBirth').datepicker({ 
+    uiLibrary: 'bootstrap4', 
+    format: 'dd/mm/yyyy' 
+  }); 
+</script>
+</html>

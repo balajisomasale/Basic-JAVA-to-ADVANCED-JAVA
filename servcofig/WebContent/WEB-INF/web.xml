@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <servlet-name>serv1</servlet-name>
+    <servlet-class>com.cognizant.constructor.serv1</servlet-class>
+    <init-param>
+      <param-name>uname</param-name>
+      <param-value>Balu</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv1</servlet-name>
+    <url-pattern>/serv1</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>name</param-name>
+    <param-value>Cognizant</param-value>
+  </context-param>
+</web-app>
